@@ -41,3 +41,101 @@
     white-space: nowrap;
     overflow-x: auto;
 }
+
+
+
+video {
+    max-width: 100%;
+    max-height: 100%;
+}
+.video-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+#myVideo {
+    display: block;
+    width: 100%;
+}
+
+.custom-controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+.custom-controls.fade-out {
+    opacity: 0;
+}
+.custom-controls button {
+    background-color: transparent;
+    color: #1ba634;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.custom-controls i {
+    font-size: 80px;
+}
+.prev-next i {
+    font-size: 30px;
+}
+.standard-radius-btn{
+    border-radius: 50%;
+}
+.next-button {
+    position: absolute;
+    right: 10px; /* Position it 10px from the right side of the container */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically relative to the container */
+    background-color: transparent;
+    color: #1ba634;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; /* Ensure it is above other elements */
+}
+.previous-button {
+    position: absolute;
+    left: 10px; /* Position it 10px from the left side of the container */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically relative to the container */
+    background-color: transparent;
+    color: #1ba634;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; /* Ensure it is above other elements */
+}
+.sidebar-buttons {
+    border-radius: 100px;
+    background-color: #6474673c;
+    position: absolute;
+    right: 10px; /* Position it 10px from the right side of the container */
+    top: 75%;
+    transform: translateY(-50%); /* Center vertically relative to the container */
+    display: flex;
+    flex-direction: column; /* Arrange buttons in a column */
+    gap: 10px; /* Add spacing between buttons */
+    z-index: 10; /* Ensure it is above other elements */
+}
+
+.sidebar-buttons button {
+    background-color: transparent;
+    color: #1ba634;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+/* Ensure body and html take up full height and width */
+
+
+
+
+
